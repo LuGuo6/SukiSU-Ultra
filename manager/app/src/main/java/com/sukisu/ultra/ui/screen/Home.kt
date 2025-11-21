@@ -297,7 +297,7 @@ private fun TopBar(
             if (isDataLoaded) {
                 // SuSFS 配置按钮
                 val susfsVersion = getSuSFSVersion()
-                if (susfsVersion.isNotEmpty() && !susfsVersion.startsWith("[-]") && SuSFSManager.isBinaryAvailable(context)) {
+                if (susfsVersion.isNotEmpty() && !susfsVersion.startsWith("[-]")) {
                     IconButton(onClick = {
                         navigator.navigate(SuSFSConfigScreenDestination)
                     }) {
